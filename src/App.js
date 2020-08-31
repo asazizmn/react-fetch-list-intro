@@ -103,7 +103,7 @@ const App = () => {
       }
 
       <div className="right-align fade-in">
-        <button className="next-btn" onClick={() => window.location.reload(false)} title="Display next set of cards">Next >></button>
+        <button className="next-btn" onClick={() => window.location.reload(false)} title="Display next set of cards">Next &gt;&gt;</button>
       </div>
     </>
   )
