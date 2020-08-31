@@ -101,6 +101,10 @@ const App = () => {
           />
         ))
       }
+
+      <div className="right-align fade-in">
+        <button onClick={() => window.location.reload(false)}>Next >></button>
+      </div>
     </>
   )
 };

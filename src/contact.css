@@ -27,7 +27,7 @@ button {
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   box-shadow: 10px 10px 25px -16px rgba(0, 0, 0, 0.75);
   border-radius: 10px;
-  max-width: 500px;
+  /* max-width: 500px; */
   max-height: 125px;
   margin-bottom: 20px;
 }
