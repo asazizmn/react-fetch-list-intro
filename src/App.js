@@ -140,7 +140,7 @@ const ContactCard = props => {
     // also note `className` (react) vs `class` (html)
     <div className="contact-card fade-in">
       <img src={props.avatar} alt="profile" />
-      <div className="user-details">
+      <div>
         <p>Name: {props.name}</p>
         <p>Email: {props.email}</p>
 
