@@ -134,7 +134,7 @@ const ContactCard = props => {
     // Therefore, comments work outside of the `<div></div>` segment
 
     // also note `className` (react) vs `class` (html)
-    <div className="contact-card">
+    <div className="contact-card fade-in">
       <img src={props.avatar} alt="profile" />
       <div className="user-details">
         <p>Name: {props.name}</p>
