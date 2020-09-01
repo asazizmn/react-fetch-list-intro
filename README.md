@@ -1,7 +1,7 @@
 ![Project Screenshot](/public/screenshot.png)
 
 
-# React List API Intro
+# React Fetch List Intro
 This is a beginners React project that experiments with JSX, Components, Hooks (useState, useEffect), Props, and the Fetch API. The single page application environment was setup using the common `create-react-app` utility and builds a simple contacts list that displays the data read from an API call to https://randomuser.me/. 
 
 Please note that this project was based on the "How to Get Started with React — A Modern Project-based Guide for Beginners (Including Hooks)" tutorial by Chris Blakely... Albeit with some basic user interface improvements. 
