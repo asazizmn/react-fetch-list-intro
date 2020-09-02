@@ -28,7 +28,7 @@ const App = () => {
   //   { name: "Peter Pan", email: "peter.pan@neverland.com", age: 100 }
   // ];
 
-  // Please note that a state in React is a good for holding data that can change
+  // Please note that a state in React is good for holding data that can change
   // so our contacts list is a good candidate for this
   const [contacts, setContacts] = useState([]);
   
