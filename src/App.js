@@ -28,26 +28,48 @@ const App = () => {
   //   { name: "Peter Pan", email: "peter.pan@neverland.com", age: 100 }
   // ];
 
-  // Please note that a state in React is good for holding data that can change
-  // so our contacts list is a good candidate for this
+  // notes on `useState` and relevant details -
+  //
+  // a state in React is good for holding data that can change
+  // ... so our `contacts` list is a good candidate for this
+  //
+  // `useState` takes in an initial value and returns
+  // ... 1. reference to state value 
+  // ... 2. function to allow changing the state
+  //
+  // `const [elem1, elem2] = anArray` is an example of destructuring an array
+  // ... so once the array is returned, it is destructured
+  // ... and the two returning items are accesible through
+  // ... `contacts` and `setContacts` in this case
+  // 
+  // also note that this state only represents one instance of the component
+  // ... so if there are 3 instances, i.e. 3 cards, each card will have it's own state representation
   const [contacts, setContacts] = useState([]);
   
+  // note on coding conventions -
+  // 
+  // please note that the const variable has not been made uppercase,
+  // ... as this is only used internally here, and AirBnB guidelines state 
+  // ... that only exported variables that are const should be made uppercase
 
-  // It's also important to note that in React, that once the state changes, 
+  // It's also important to note that in React, once the state changes, 
   // ... the view is re-rendered automatically. 
-  // Without the `useEffect` hook the view would be re-rendered continuously in a loop
-  // Every time it is re-rendered, the API call is made again, ...
+  // ... without the `useEffect` hook the view would be re-rendered continuously in a loop
+  // ... every time it is re-rendered, the API call is made again, ...
   // ... which returns a different set of use objects from the API call
   // ... which causes the state to change again, followed by a re-render etc
 
+  // `Fetch` used to call randomuser.me API and retrieve random user details
   // fetch("https://randomuser.me/api/?results=3")
   //   .then(response => response.json())
   //   .then(data => setContacts(data.results));
 
-  
+  // notes on `useEffect` -
+  //
   // Please note just like componentDidMount in class based react components
-  // useEffect can be used in a similar fashion to execute code
+  // ... useEffect can be used in a similar fashion to execute code
   // ... (API call in this case) once the component is mounted.
+  //
   // `[]` as the second parameter ensures that the code is only executed once
   // ... on mount and not everytime the component is rendered
 
@@ -118,19 +140,8 @@ const App = () => {
  */
 const ContactCard = props => {
 
-  // destructuring an array
-  // `useState` takes in an initial value and returns ...
-  // ... 1. reference to state value 
-  // ... 2. function to allow changing the state
+  // please refer to the `useState` comments above
   const [showAge, setShowAge] = useState(false);
-
-  // it should be noted that this state only represents one instance of the component
-  // so if there are 3 instances, i.e. 3 cards, each card will have it's own state representation
-
-  // please note that the const has not been made uppercase, ...
-  // ... as this is only used internally here,
-  // AirBnB guidelines state that only exported variables that are const ...
-  // ... should be made uppercase
 
   return (
     // Please note that anything between `<div></div>` is JSX,
