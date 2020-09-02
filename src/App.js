@@ -14,7 +14,7 @@ import './contact.css';
 
 
 
-/* 
+/** 
  * App Component 
  */
 const App = () => {
@@ -111,7 +111,7 @@ const App = () => {
 
 
 
-/*
+/**
  * Contact Component
  * It exists here just for ease,
  * in the real world, components should ideally be in there own file
