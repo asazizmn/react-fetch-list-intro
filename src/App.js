@@ -77,7 +77,9 @@ const App = () => {
     fetch("https://randomuser.me/api/?results=3")
     .then(response => response.json())
     .then(data => {
-      console.log(data.results);
+
+      // uncomment to see data set in console
+      // console.log(data.results);
       setContacts(data.results);
     });
   }, []);
