@@ -68,10 +68,19 @@ const App = () => {
   //
   // Please note just like componentDidMount in class based react components
   // ... useEffect can be used in a similar fashion to execute code
-  // ... (API call in this case) once the component is mounted.
+  // ... API call in this case, once the component is mounted.
   //
   // `[]` as the second parameter ensures that the code is only executed once
   // ... on mount and not everytime the component is rendered
+  //
+  // in essence, by using the useEffect hook ...
+  // ... you tell react that your component needs to do something
+  // ... after rendering
+  //
+  // also, react lifecycle methods ...
+  // ... like componentDidMount are not available to functional components
+  // ... lifecycle methods are only available to class components
+  
 
   useEffect(() => {
     fetch("https://randomuser.me/api/?results=3")
